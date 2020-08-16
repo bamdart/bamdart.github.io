@@ -18,6 +18,11 @@
     hr {
       background-color:#EEEEEE;
     }
+    .list-group-item {
+      padding-top:5px;
+      padding-bottom:5px;
+      border: 1px solid rgba(255, 255, 255, .125);
+    }
   </style>
 
   <body style="background-color: #111111; color:#EEEEEE; font-family:Microsoft JhengHei;">
@@ -27,24 +32,84 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Bamdart</a>
       <div class="navbar-nav">
+        <a class="nav-link" href="#skill">技能</a>
         <a class="nav-link" href="#experience">工作經歷</a>
         <a class="nav-link" href="#achievement">比賽及展覽經驗</a>
       </div>
     </nav>    
 
-    <div class="container" style="background-color:#222222; border-radius: 12px; margin-top: 50px; margin-bottom: 50px; padding:20px; ">
+    <div class="container" style="background-color:#222222; border-radius: 12px; margin-top: 100px; margin-bottom: 50px; padding:20px; ">
       <div class="row align-items-center" style="padding-top:20px; padding-bottom:20px; margin:10px; background-color:#444444; border-radius: 12px;">
-        <div class="col-12 col-md-4" style="height:200px">
-          <img src="./me_small.jpg" class="mx-auto d-block" style="max-height: 100%; max-width: 100%; border-radius:50%">
+        <div class="col-12 col-md-4" style="min-height:200px">
+          <img src="./me_small.jpg" class="mx-auto d-block" style="max-height: 80%; max-width: 80%; border-radius:50%">
         </div>
         <div class="col-12 col-md-8">
           <h1>沈政一</h1>
-          <p>在大學一年級開始即跟著教授開始做產學合作案，案子所需的技能都是需要自己學習的，因此學習新東西的能力算是不錯，並且對於團隊合作也很有經驗。並有程式教學、參與展覽、參加全國性比賽等多種經驗。</p>
-          <p style="padding:0px; color: #999999;">臺灣科技大學 - 資訊工程系學士 (2015~2019)</p>
-          <p style="padding:0px; color: #999999;">臺灣科技大學 - 資訊工程所碩士 (2019~2020)</p>
+          <p style="margin-bottom: 10px;">在大學一年級開始即跟著教授開始做產學合作案，案子所需的技能都是需要自己學習的，因此學習新東西的能力算是不錯，並且對於團隊合作也很有經驗。並有程式教學、參與展覽、參加全國性比賽等多種經驗。</p>
+          <p style="color: #999999; font-size:16px;">臺灣科技大學 - 資訊工程系學士 (2015~2019)</p>
+          <p style="margin-bottom: 10px; color: #999999; font-size:16px;">臺灣科技大學 - 資訊工程所碩士 (2019~2020)</p>
+          <p style="color: #999999; font-size:16px;">G-Mail : <a  href = "mailto:bamdart@gmail.com.tw">bamdart@gmail.com.tw</a></p>
+          <p style="color: #999999; font-size:16px;">Github : <a href="https://github.com/bamdart">https://github.com/bamdart</a></p>
+        </div>
+      </div>
+
+      <div id="skill" class="row" style="margin-top: 20px;">
+        <div class="col">
+          <h1>技能</h1>
+          <hr>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="card text-white bg-dark" style="width: 100%;">
+                <div class="card-header" style="font-size:24px;">擅長</div>
+                <div class="card-body">
+                  <ul class="list-group list-group-flush" style="border-color: #EEEEEE;">
+                    <li class="list-group-item text-gray bg-dark">C/C++</li>
+                    <li class="list-group-item text-gray bg-dark">C#、C# wpf</li>
+                    <li class="list-group-item text-gray bg-dark">OpenCV (C++ / Python)</li>
+                    <li class="list-group-item text-gray bg-dark">Python</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card text-white bg-dark" style="width: 100%;">
+                <div class="card-header" style="font-size:24px;">熟悉</div>
+                <div class="card-body">
+                  <ul class="list-group list-group-flush" style="border-color: #EEEEEE;">
+                    <li class="list-group-item text-gray bg-dark">Unity (C#)</li>
+                    <li class="list-group-item text-gray bg-dark">Swift4</li>
+                    <li class="list-group-item text-gray bg-dark">Keras (python)</li>
+                    <li class="list-group-item text-gray bg-dark">ASP.NET (C#)</li>
+                    <li class="list-group-item text-gray bg-dark">Bootstrap</li>
+                    <li class="list-group-item text-gray bg-dark">TypeScript</li>
+                    <li class="list-group-item text-gray bg-dark">React</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card text-white bg-dark" style="width: 100%;">
+                <div class="card-header" style="font-size:24px;">用過</div>
+                <div class="card-body">
+                  <ul class="list-group list-group-flush" style="border-color: #EEEEEE;">
+                    <li class="list-group-item text-gray bg-dark">HTML</li>
+                    <li class="list-group-item text-gray bg-dark">JavaScript</li>
+                    <li class="list-group-item text-gray bg-dark">Phaser2, 3 (TypeScript)</li>
+                    <li class="list-group-item text-gray bg-dark">Android Studio</li>
+                    <li class="list-group-item text-gray bg-dark">Java</li>
+                    <li class="list-group-item text-gray bg-dark">MatLab</li>
+                    <li class="list-group-item text-gray bg-dark">MySQL</li>
+                    <li class="list-group-item text-gray bg-dark">SQLite</li>
+                    <li class="list-group-item text-gray bg-dark">C++ CLR</li>
+                    <li class="list-group-item text-gray bg-dark">OpenGL (C++)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -119,6 +184,38 @@
             <hr style="margin-top:5px; margin-bottom:5px;">
             <p style="text-indent:2em;">參加2019全國大專院校軟體創作競賽的智慧感知與互動多媒體組，隊名無辨，以全天候自動化車牌辨識系統獲得銅牌。</p>
           </div>
+        </div>
+      </div>
+
+      <div id="portfolio" class="row" style="margin-top: 20px;">
+        <div class="col">
+          <h1>作品集</h1>
+          <hr>
+          <div class="alert bg-dark text-gray" style="margin-left:20px;">
+            <h3>Gravity</h3>
+            <hr style="margin-top:5px; margin-bottom:5px;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/koCh1QU4ZAQ?rel=0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="alert bg-dark text-gray" style="margin-left:20px;">
+            <h3>EasyMRT</h3>
+            <hr style="margin-top:5px; margin-bottom:5px;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UgTeyr1mbkw?rel=0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="alert bg-dark text-gray" style="margin-left:20px;">
+            <h3>Refuge</h3>
+            <hr style="margin-top:5px; margin-bottom:5px;">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Q_B353Ijfgg?rel=0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </div>
