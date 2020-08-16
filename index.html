@@ -23,26 +23,86 @@
       padding-bottom:5px;
       border: 1px solid rgba(255, 255, 255, .125);
     }
+
+    .snow-box{
+      position: fixed;
+      animation: fall 20s linear infinite;
+    }
+
+    .snow {
+      border-radius: 50%;
+      background-color:#FFFFFF;
+      animation: float 10s linear infinite alternate-reverse;
+    }
+
+    @keyframes fall {
+      from {top:0%;}
+      to {top:100%;}
+    }
+
+    @keyframes float {
+      from {margin-left:-20px;}
+      to {margin-left:20px;}
+    }
   </style>
 
-  <body style="background-color: #111111; color:#EEEEEE; font-family:Microsoft JhengHei;">
+  <body style="background-color: #111111; color:#EEEEEE; font-family:Microsoft JhengHei; overflow-x: hidden;">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     
-    <nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Bamdart</a>
-      <div class="navbar-nav">
-        <a class="nav-link" href="#skill">技能</a>
-        <a class="nav-link" href="#experience">工作經歷</a>
-        <a class="nav-link" href="#achievement">比賽及展覽經驗</a>
-        <a class="nav-link" href="#portfolio">作品集</a>
-      </div>
-    </nav>    
+    <script>
+      const limitTime = 20 * 1000;
+      const stepSnowNumber = Math.floor(screen.width / 150);
+      var totalTime = 0;
 
-    <div class="container" style="background-color:#222222; border-radius: 12px; margin-top: 100px; margin-bottom: 50px; padding:20px; ">
+      document.body.onload = snowing;
+
+      function snowing(){
+        const snowNumber = Math.floor(Math.random() * stepSnowNumber);
+        for(let i = 0; i< snowNumber;i++){
+          const left = Math.floor(Math.random() * screen.width);
+          const heightShift = Math.floor(Math.random() * 50)
+          const size = 2 + Math.floor(Math.random() * 5);
+          
+          let box = document.createElement("div"); 
+          document.body.appendChild(box);
+          box.className = "snow-box";
+          box.style = "left: " + left + "px; margin-top: " + heightShift + "px;";
+
+          let snow = document.createElement("div");
+          box.appendChild(snow);
+          snow.className = "snow";
+          snow.style = "height: " + size + "px; width: " + size + "px;";
+        }
+        const delay = Math.random() * 1000;
+        totalTime += delay;
+        if(totalTime < limitTime){
+          setTimeout(() => snowing(), delay);
+        }
+      }
+      
+
+    </script>
+
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Bamdart</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#skill">技能</a>
+          <a class="nav-link" href="#experience">工作經歷</a>
+          <a class="nav-link" href="#achievement">比賽及展覽經驗</a>
+          <a class="nav-link" href="#portfolio">作品集</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" style="background-color:#222222; border-radius: 12px; margin-top: 100px; margin-bottom: 50px; padding:20px; z-index:100;">
       <div class="row align-items-center" style="padding-top:20px; padding-bottom:20px; margin:10px; background-color:#444444; border-radius: 12px;">
         <div class="col-12 col-md-4" style="min-height:200px">
           <img src="./me_small.jpg" class="mx-auto d-block" style="max-height: 80%; max-width: 80%; border-radius:50%">
