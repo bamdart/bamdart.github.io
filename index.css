@@ -6,13 +6,13 @@ body {
     color:#EEEEEE;
     font-family:Microsoft JhengHei;
     overflow-x: hidden;
-    
+
     height: 100%;
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('./bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
