@@ -11,8 +11,11 @@ body {
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('./bg.jpg');
     background-repeat: no-repeat;
+    -webkit-background-attachment: fixed;
+    -moz-background-size: fixed;
+    -o-background-size: fixed;
     background-attachment: fixed;
-    background-position: top center;
+    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
