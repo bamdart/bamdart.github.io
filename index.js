@@ -1,5 +1,5 @@
 const limitTime = 20 * 1000;
-const stepSnowNumber = Math.floor(screen.width / 150);
+const stepSnowNumber = Math.min(3 + Math.floor(screen.width / 150), 15);
 var totalTime = 0;
 
 document.body.onload = snowing;

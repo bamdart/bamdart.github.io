@@ -35,7 +35,7 @@ hr {
 
 .snow {
     border-radius: 50%;
-    background-color:#FFFFFF;
+    background-color: rgba(255,255,255, 0.6);
 }
 
 .bg-transparent-black{
