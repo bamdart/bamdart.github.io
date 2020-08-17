@@ -1,0 +1,56 @@
+body {
+    /* background-color: #111111; */
+    color:#EEEEEE;
+    font-family:Microsoft JhengHei;
+    overflow-x: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+}
+
+p {
+    margin:0px;
+    font-size: 18px;
+}
+hr {
+    background-color:#EEEEEE;
+}
+.list-group-item {
+    padding-top:5px;
+    padding-bottom:5px;
+    border: 1px solid rgba(255, 255, 255, .125);
+}
+
+.snow-box{
+    position: fixed;
+    animation: fall 20s linear infinite;
+}
+
+.snow {
+    border-radius: 50%;
+    background-color:#FFFFFF;
+}
+
+@keyframes fall {
+    from {top:0%;}
+    to {top:100%;}
+}
+
+@keyframes float-1 {
+    from {margin-left:-20px;}
+    to {margin-left:20px;}
+}
+@keyframes float-2 {
+    from {margin-left:-10px;}
+    to {margin-left:10px;}
+}
+@keyframes float-3 {
+    from {margin-left:20px;}
+    to {margin-left:-20px;}
+}
+@keyframes float-4 {
+    from {margin-left:10px;}
+    to {margin-left:-10px;}
+}
