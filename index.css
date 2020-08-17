@@ -6,14 +6,19 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('./bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
-    background-size: 100%;
+    background-position: center center;
+    background-size: cover;
 }
 
 p {
     margin:0px;
     font-size: 18px;
 }
+
+h1 {
+    font-weight:bold;
+}
+
 hr {
     background-color:#EEEEEE;
 }
@@ -31,6 +36,15 @@ hr {
 .snow {
     border-radius: 50%;
     background-color:#FFFFFF;
+}
+
+.bg-transparent-black{
+    background-color: rgba(52, 58, 64, 0.7);
+}
+
+
+.bg-transparent-gray{
+    background-color: rgba(109, 117, 126, 0.5);
 }
 
 @keyframes fall {
