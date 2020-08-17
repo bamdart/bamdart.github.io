@@ -1,7 +1,3 @@
-html {
-    min-height: 100%;
-}
-
 body {
     /* background-color: #111111; */
     color:#EEEEEE;
@@ -12,6 +8,7 @@ body {
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
+    min-height: 100%;
 }
 
 p {
