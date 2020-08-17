@@ -1,3 +1,8 @@
+html {
+    height: 100vh; /* set viewport constraint */
+    min-height: 100%; /* enforce height */
+}
+
 body {
     /* background-color: #111111; */
     color:#EEEEEE;
@@ -8,6 +13,7 @@ body {
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
+    -webkit-background-size: cover; /* safari may need this */
     min-height: 100%;
 }
 
