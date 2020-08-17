@@ -25,9 +25,6 @@ body {
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('./bg.jpg');
     background-repeat: no-repeat;
-    -webkit-background-attachment: fixed;
-    -moz-background-attachment: fixed;
-    -o-background-attachment: fixed;
     background-attachment: fixed;
     background-position: center center;
     -webkit-background-size: cover;
