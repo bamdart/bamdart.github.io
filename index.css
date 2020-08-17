@@ -1,15 +1,13 @@
 html {
-    height: 100vh; /* set viewport constraint */
-    min-height: 100%; /* enforce height */
-    
+    height: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('./bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    background-size: cover;
-    -webkit-background-size: cover; /* safari may need this */
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
 }
 
 body {
