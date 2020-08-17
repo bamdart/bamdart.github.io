@@ -1,5 +1,14 @@
 html {
+}
+
+body {
+    /* background-color: #111111; */
+    color:#EEEEEE;
+    font-family:Microsoft JhengHei;
+    overflow-x: hidden;
+    
     height: 100%;
+
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('./bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,13 +17,6 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-body {
-    /* background-color: #111111; */
-    color:#EEEEEE;
-    font-family:Microsoft JhengHei;
-    overflow-x: hidden;
 }
 
 p {
