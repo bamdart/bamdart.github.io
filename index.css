@@ -1,95 +1,115 @@
 html {
 }
-/* 
+
 body:before {
-    content: "";
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('./bg.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  } */
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+    url("./bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 body {
-    /* background-color: #111111; */
-    color:#EEEEEE;
-    font-family:Microsoft JhengHei;
-    overflow-x: hidden;
+  /* background-color: #111111; */
+  color: #eeeeee;
+  font-family: Microsoft JhengHei;
+  overflow-x: hidden;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('./bg.jpg');
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('./bg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
 }
 
 p {
-    margin:0px;
-    font-size: 18px;
-    text-align: justify;
-    text-justify:inter-ideograph;
+  margin: 0px;
+  font-size: 18px;
+  text-align: justify;
+  text-justify: inter-ideograph;
 }
 
 h1 {
-    font-weight:bold;
+  font-weight: bold;
 }
 
 hr {
-    background-color:#EEEEEE;
+  background-color: #eeeeee;
 }
 .list-group-item {
-    padding-top:5px;
-    padding-bottom:5px;
-    border: 1px solid rgba(255, 255, 255, .125);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
-.snow-box{
-    position: fixed;
-    animation: fall 20s linear infinite;
+.snow-box {
+  position: fixed;
+  animation: fall 20s linear infinite;
 }
 
 .snow {
-    border-radius: 50%;
-    background-color: rgba(255,255,255, 0.6);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
-.bg-transparent-black{
-    background-color: rgba(52, 58, 64, 0.7);
+.bg-transparent-black {
+  background-color: rgba(52, 58, 64, 0.7);
 }
 
-
-.bg-transparent-gray{
-    background-color: rgba(109, 117, 126, 0.5);
+.bg-transparent-gray {
+  background-color: rgba(109, 117, 126, 0.5);
 }
 
 @keyframes fall {
-    from {top:0%;}
-    to {top:100%;}
+  from {
+    top: 0%;
+  }
+  to {
+    top: 100%;
+  }
 }
 
 @keyframes float-1 {
-    from {margin-left:-20px;}
-    to {margin-left:20px;}
+  from {
+    margin-left: -20px;
+  }
+  to {
+    margin-left: 20px;
+  }
 }
 @keyframes float-2 {
-    from {margin-left:-10px;}
-    to {margin-left:10px;}
+  from {
+    margin-left: -10px;
+  }
+  to {
+    margin-left: 10px;
+  }
 }
 @keyframes float-3 {
-    from {margin-left:20px;}
-    to {margin-left:-20px;}
+  from {
+    margin-left: 20px;
+  }
+  to {
+    margin-left: -20px;
+  }
 }
 @keyframes float-4 {
-    from {margin-left:10px;}
-    to {margin-left:-10px;}
+  from {
+    margin-left: 10px;
+  }
+  to {
+    margin-left: -10px;
+  }
 }
