@@ -7,7 +7,8 @@ document.body.onload = snowing;
 function snowing(){
     const snowNumber = Math.floor(Math.random() * stepSnowNumber);
     for(let i = 0; i < snowNumber;i++){
-        const left = Math.floor(Math.random() * screen.width);
+        const widthRatio = window.devicePixelRatio || 1;
+        const left = Math.floor(Math.random() * screen.width * widthRatio);
         const heightShift = Math.floor(Math.random() * 50)
         const size = 2 + Math.floor(Math.random() * 5);
         const floatAnimation = 1 + Math.floor(Math.random() * 4 - 0.0001);
