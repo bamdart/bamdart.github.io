@@ -1,4 +1,5 @@
 html {
+    background-color: #000000;
 }
 /* 
 body:before {
@@ -28,9 +29,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top center;
-  /* -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover; */
+  /-webkit-background-size: 100vw auto;
+  -moz-background-size: 100vw auto;
+  -o-background-size: 100vw auto;
   background-size: 100vw auto;
 }
 
