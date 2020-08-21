@@ -1,16 +1,5 @@
 html {
     background-color: #000000;
-    
-  z-index: -10;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
-    url("./bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 /* body:before {
@@ -30,6 +19,15 @@ body {
   color: #eeeeee;
   font-family: Microsoft JhengHei;
   overflow-x: hidden;
+    
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("./bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-position: top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 p {
