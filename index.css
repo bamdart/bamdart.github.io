@@ -51,7 +51,6 @@ hr {
 
 .snow-box {
   position: fixed;
-  animation: fall 20s linear infinite;
 }
 
 .snow {
@@ -67,6 +66,14 @@ hr {
   background-color: rgba(109, 117, 126, 0.5);
 }
 
+.alert:hover {
+  box-shadow:0px 0px 5px 5px #222222;
+  -moz-transform: translate(-3px, -3px);
+  -ms-transform: translate(-3px, -3px);
+  -o-transform: translate(-3px, -3px);
+  -webkit-transform: translate(-3px, -3px);
+  transform: translate(-3px, -3px)
+}
 
 @keyframes fall {
   from {
