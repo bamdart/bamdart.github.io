@@ -66,8 +66,17 @@ hr {
   background-color: rgba(109, 117, 126, 0.5);
 }
 
-.alert:hover {
-  box-shadow:0px 0px 5px 5px #222222;
+.alert.bg-transparent-black.text-gray:hover {
+  box-shadow:5px 5px 5px 5px #222222;
+  -moz-transform: translate(-3px, -3px);
+  -ms-transform: translate(-3px, -3px);
+  -o-transform: translate(-3px, -3px);
+  -webkit-transform: translate(-3px, -3px);
+  transform: translate(-3px, -3px)
+}
+
+.card.bg-transparent-black.text-white:hover {
+  box-shadow:5px 5px 5px 5px #222222;
   -moz-transform: translate(-3px, -3px);
   -ms-transform: translate(-3px, -3px);
   -o-transform: translate(-3px, -3px);

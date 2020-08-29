@@ -1,5 +1,5 @@
 const limitTime = 30 * 1000;
-const stepSnowNumber = Math.min(3 + Math.floor(screen.width / 150), 10);
+const stepSnowNumber = Math.min(3 + Math.floor(screen.width / 200), 10);
 var totalTime = 0;
 
 document.body.onload = snowing;
@@ -18,7 +18,7 @@ function snowing(){
         const widthRatio = window.devicePixelRatio || 1;
         const left = random(max = screen.width * widthRatio, float = false);
         const heightShift = random(-25, 25, float = false);
-        const fallAnimationTime = random(20, 30);
+        const fallAnimationTime = random(20, 30, float = false);
         
         let box = document.createElement("div"); 
         document.body.appendChild(box);
@@ -27,7 +27,7 @@ function snowing(){
 
         const size = random(2, 7, float = false);
         const floatAnimation = random(1, 12, float = false);
-        const floatAnimationTime = random(10, 20);
+        const floatAnimationTime = random(10, 20, float = false);
         const snowTransparent = random(0.3, 0.8);
 
         let snow = document.createElement("div");
@@ -35,7 +35,7 @@ function snowing(){
         snow.className = "snow";
         snow.style = "height: " + size + "px; width: " + size + "px; background-color: rgba(255, 255, 255, " + snowTransparent + "); animation: float-" + floatAnimation + " " + floatAnimationTime + "s ease-in-out infinite alternate-reverse;";
     }
-    const delay = random(max = 1000, float = false)
+    const delay = random(min = 500, max = 1000, float = false)
     totalTime += delay;
     if(totalTime < limitTime){
         setTimeout(() => snowing(), delay);
