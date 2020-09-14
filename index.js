@@ -35,7 +35,7 @@ function snowing(){
         snow.className = "snow";
         snow.style = "height: " + size + "px; width: " + size + "px; background-color: rgba(255, 255, 255, " + snowTransparent + "); animation: float-" + floatAnimation + " " + floatAnimationTime + "s ease-in-out infinite alternate-reverse;";
     }
-    const delay = random(min = 500, max = 1000, float = false)
+    const delay = random(min = 1000, max = 2000, float = false)
     totalTime += delay;
     if(totalTime < limitTime){
         setTimeout(() => snowing(), delay);

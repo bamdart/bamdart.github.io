@@ -19,14 +19,41 @@ body {
   font-family: Microsoft JhengHei;
   overflow-x: hidden;
     
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url('./bg.jpg'); */
+
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
+
+  background: linear-gradient(165deg, #000000, #888888);
+  background-size: 400% 400%;
+  background-attachment: fixed;
+
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
+}
+
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:15% 0%}
+  50%{background-position:85% 100%}
+  100%{background-position:15% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:15% 0%}
+  50%{background-position:85% 100%}
+  100%{background-position:15% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:15% 0%}
+  50%{background-position:85% 100%}
+  100%{background-position:15% 0%}
 }
 
 p {
