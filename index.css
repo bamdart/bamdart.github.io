@@ -104,15 +104,6 @@ hr {
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
-.snow-box {
-  position: fixed;
-}
-
-.snow {
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
 .bg-transparent-black {
   background-color: rgba(52, 58, 64, 0.7);
 }
@@ -137,6 +128,35 @@ hr {
   -o-transform: translate(-3px, -3px);
   -webkit-transform: translate(-3px, -3px);
   transform: translate(-3px, -3px);
+}
+
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #cccccc;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  width: 1px;
+  background: #505050;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #303030;
+}
+
+.snow-box {
+  position: fixed;
+}
+
+.snow {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 @keyframes fall {
