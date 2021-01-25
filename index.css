@@ -1,5 +1,6 @@
 html {
   background-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
 }
 
 body:after {
@@ -24,7 +25,7 @@ body {
   color: #eeeeee;
   font-family: Microsoft JhengHei;
   overflow-x: hidden;
-
+  scroll-behavior: smooth;
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("./image/bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
