@@ -1,259 +1,479 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Bamdart</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="./index.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./index.css" />
   </head>
 
   <body>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v9.0"
+      nonce="rKrytrP5"
+    ></script>
+
     <script src="./index.js"></script>
 
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="#">Bamdart</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse" id="navbar">
           <div class="navbar-nav mr-auto">
-            <a class="nav-link" href="#skill">技能</a>
-            <a class="nav-link" href="#experience">工作經歷</a>
-            <a class="nav-link" href="#school-experience">在學經歷</a>
-            <a class="nav-link" href="#achievement">比賽及展覽經驗</a>
-            <a class="nav-link" href="#portfolio">作品集</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#skill">技能</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#experience">工作經歷</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#school-experience">在學經歷</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#achievement">比賽及展覽經驗</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#portfolio">作品集</a>
+            </li>
           </div>
         </div>
       </div>
     </nav>
 
-
-    <div class="container" style="background-color: rgba(0,0,0,0); border-radius: 12px; margin-top: 100px; margin-bottom: 50px; padding:20px; z-index:100;">
-      <div class="row align-items-center" style="padding-top:20px; padding-bottom:20px; margin:10px; background-color:rgba(70,70,70,0.8); border-radius: 12px;">
-        <div class="col-12 col-md-4" style="min-height:200px">
-          <img src="./image/me_small.jpg" class="mx-auto d-block" style="max-height: 80%; max-width: 80%; border-radius:50%">
+    <div
+      class="container"
+      style="
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 12px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        padding: 20px;
+        z-index: 100;
+        scroll-behavior: smooth;
+      "
+    >
+      <div
+        class="row align-items-center"
+        style="
+          padding-top: 20px;
+          padding-bottom: 20px;
+          margin: 10px;
+          background-color: rgba(70, 70, 70, 0.8);
+          border-radius: 12px;
+        "
+      >
+        <div class="col-12 col-md-4" style="min-height: 200px">
+          <img
+            src="./image/me_small.jpg"
+            class="mx-auto d-block"
+            style="max-height: 80%; max-width: 80%; border-radius: 50%"
+          />
         </div>
         <div class="col-12 col-md-8">
           <h1>沈政一</h1>
-          <p style="margin-bottom: 10px;">在大學一年級開始即跟著教授開始做產學合作案，案子所需的技能都是需要自己學習的，因此學習新東西的能力算是不錯，並且對於團隊合作也很有經驗。並有程式教學、參與展覽、參加全國性比賽等多種經驗。</p>
-          <p style="color: #999999; font-size:16px;">臺灣科技大學 - 資訊工程系學士 (2015~2019)</p>
-          <p style="margin-bottom: 10px; color: #999999; font-size:16px;">臺灣科技大學 - 資訊工程所碩士 (2019~2020)</p>
-          <p style="color: #999999; font-size:16px;">G-Mail : <a  href = "mailto:bamdart@gmail.com">bamdart@gmail.com</a></p>
-          <p style="color: #999999; font-size:16px;">Github : <a href="https://github.com/bamdart">https://github.com/bamdart</a></p>
+          <p style="margin-bottom: 10px">
+            在大學一年級開始即跟著教授開始做產學合作案，案子所需的技能都是需要自己學習的，因此學習新東西的能力算是不錯，並且對於團隊合作也很有經驗。並有程式教學、參與展覽、參加全國性比賽等多種經驗。
+          </p>
+          <p style="color: #999999; font-size: 16px">臺灣科技大學 - 資訊工程系學士 (2015~2019)</p>
+          <p style="margin-bottom: 10px; color: #999999; font-size: 16px">臺灣科技大學 - 資訊工程所碩士 (2019~2020)</p>
+          <p style="color: #999999; font-size: 16px">
+            G-Mail : <a href="mailto:bamdart@gmail.com">bamdart@gmail.com</a>
+          </p>
+          <p style="color: #999999; font-size: 16px">
+            Github : <a href="https://github.com/bamdart">https://github.com/bamdart</a>
+          </p>
+          <p style="color: #999999; font-size: 16px">
+            Linkedin : <a href="https://www.linkedin.com/in/bamdart/">https://www.linkedin.com/in/bamdart/</a>
+          </p>
         </div>
       </div>
 
-      <div id="skill" class="row" style="padding-top: 60px;">
+      <div id="skill" class="row" style="padding-top: 60px">
         <div class="col">
           <h1>技能</h1>
-          <hr>
+          <hr />
           <div class="row">
             <div class="col-12 col-md-4">
-              <div class="card text-white bg-transparent-black" style="width: 100%; margin-top: 10px; margin-bottom: 10px;">
-                <div class="card-header" style="font-size:24px;">擅長</div>
+              <div class="card text-white bg-transparent-black skill-card">
+                <div class="card-header" style="font-size: 24px">程式語言</div>
                 <div class="card-body">
-                  <ul class="list-group list-group-flush" style="border-color: #EEEEEE;">
+                  <ul class="list-group list-group-flush" style="border-color: #eeeeee">
+                    <li class="list-group-item text-gray bg-transparent">Python</li>
+                    <li class="list-group-item text-gray bg-transparent">HTML/CSS/JavaScript(TypeScript)</li>
                     <li class="list-group-item text-gray bg-transparent">C/C++</li>
                     <li class="list-group-item text-gray bg-transparent">C#、C# wpf</li>
-                    <li class="list-group-item text-gray bg-transparent">OpenCV (C++ / Python)</li>
-                    <li class="list-group-item text-gray bg-transparent">Python</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="card text-white bg-transparent-black" style="width: 100%; margin-top: 10px; margin-bottom: 10px;">
-                <div class="card-header" style="font-size:24px;">熟悉</div>
-                <div class="card-body">
-                  <ul class="list-group list-group-flush" style="border-color: #EEEEEE;">
-                    <li class="list-group-item text-gray bg-transparent">Unity (C#)</li>
-                    <li class="list-group-item text-gray bg-transparent">Swift4</li>
-                    <li class="list-group-item text-gray bg-transparent">Keras (python)</li>
-                    <li class="list-group-item text-gray bg-transparent">ASP.NET (C#)</li>
-                    <li class="list-group-item text-gray bg-transparent">Bootstrap</li>
-                    <li class="list-group-item text-gray bg-transparent">TypeScript</li>
-                    <li class="list-group-item text-gray bg-transparent">React</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="card text-white bg-transparent-black" style="width: 100%; margin-top: 10px; margin-bottom: 10px;">
-                <div class="card-header" style="font-size:24px;">用過</div>
-                <div class="card-body">
-                  <ul class="list-group list-group-flush" style="border-color: #EEEEEE;">
-                    <li class="list-group-item text-gray bg-transparent">HTML</li>
-                    <li class="list-group-item text-gray bg-transparent">JavaScript</li>
-                    <li class="list-group-item text-gray bg-transparent">Phaser2, 3 (TypeScript)</li>
-                    <li class="list-group-item text-gray bg-transparent">Android Studio</li>
-                    <li class="list-group-item text-gray bg-transparent">Java</li>
-                    <li class="list-group-item text-gray bg-transparent">MatLab</li>
-                    <li class="list-group-item text-gray bg-transparent">MySQL</li>
-                    <li class="list-group-item text-gray bg-transparent">SQLite</li>
+                    <li class="list-group-item text-gray bg-transparent">ASP.NET</li>
                     <li class="list-group-item text-gray bg-transparent">C++ CLR</li>
+                    <li class="list-group-item text-gray bg-transparent">Java</li>
+                    <li class="list-group-item text-gray bg-transparent">Golang</li>
+                    <li class="list-group-item text-gray bg-transparent">MATLAB</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card text-white bg-transparent-black skill-card">
+                <div class="card-header" style="font-size: 24px">2D / 3D</div>
+                <div class="card-body">
+                  <ul class="list-group list-group-flush" style="border-color: #eeeeee">
+                    <li class="list-group-item text-gray bg-transparent">Unity (C#)</li>
+                    <li class="list-group-item text-gray bg-transparent">OpenCV (C++ / Python)</li>
                     <li class="list-group-item text-gray bg-transparent">OpenGL (C++)</li>
                   </ul>
                 </div>
               </div>
             </div>
+            <div class="col-12 col-md-4">
+              <div class="card text-white bg-transparent-black skill-card">
+                <div class="card-header" style="font-size: 24px">App</div>
+                <div class="card-body">
+                  <ul class="list-group list-group-flush" style="border-color: #eeeeee">
+                    <li class="list-group-item text-gray bg-transparent">Swift4</li>
+                    <li class="list-group-item text-gray bg-transparent">Unity (C#)</li>
+                    <li class="list-group-item text-gray bg-transparent">Android Studio (Java)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card text-white bg-transparent-black skill-card">
+                <div class="card-header" style="font-size: 24px">網頁前端</div>
+                <div class="card-body">
+                  <ul class="list-group list-group-flush" style="border-color: #eeeeee">
+                    <li class="list-group-item text-gray bg-transparent">HTML</li>
+                    <li class="list-group-item text-gray bg-transparent">CSS, SCSS</li>
+                    <li class="list-group-item text-gray bg-transparent">JaveScript, TypeScript</li>
+                    <li class="list-group-item text-gray bg-transparent">Phaser 2, 3 (TypeScript)</li>
+                    <li class="list-group-item text-gray bg-transparent">Bootstrap</li>
+                    <li class="list-group-item text-gray bg-transparent">React</li>
+                    <li class="list-group-item text-gray bg-transparent">Antd</li>
+                    <li class="list-group-item text-gray bg-transparent">Django (python)</li>
+                    <li class="list-group-item text-gray bg-transparent">ASP.NET</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card text-white bg-transparent-black skill-card">
+                <div class="card-header" style="font-size: 24px">網頁後端</div>
+                <div class="card-body">
+                  <ul class="list-group list-group-flush" style="border-color: #eeeeee">
+                    <li class="list-group-item text-gray bg-transparent">NestJS (TypeScript)</li>
+                    <li class="list-group-item text-gray bg-transparent">Django (Python)</li>
+                    <li class="list-group-item text-gray bg-transparent">ASP.NET</li>
+                    <li class="list-group-item text-gray bg-transparent">Golang</li>
+                    <li class="list-group-item text-gray bg-transparent">MySQL, MariaDB</li>
+                    <li class="list-group-item text-gray bg-transparent">SQLite</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card text-white bg-transparent-black skill-card">
+                <div class="card-header" style="font-size: 24px">Machine / Deep Learning</div>
+                <div class="card-body">
+                  <ul class="list-group list-group-flush" style="border-color: #eeeeee">
+                    <li class="list-group-item text-gray bg-transparent">Keras (Python)</li>
+                    <li class="list-group-item text-gray bg-transparent">Decision Tree</li>
+                    <li class="list-group-item text-gray bg-transparent">Random Forest</li>
+                    <li class="list-group-item text-gray bg-transparent">KNN</li>
+                    <li class="list-group-item text-gray bg-transparent">CNN</li>
+                    <li class="list-group-item text-gray bg-transparent">RNN</li>
+                    <li class="list-group-item text-gray bg-transparent">RCNN</li>
+                    <li class="list-group-item text-gray bg-transparent">GAN</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div id="experience" class="row" style="padding-top: 60px;">
+      <div id="experience" class="row" style="padding-top: 60px">
         <div class="col">
           <h1>工作經歷</h1>
-          <hr>
+          <hr />
           <div class="alert bg-transparent-black text-gray">
             <h3>產學合作案 - 峽谷即時遊憩資訊與環境品質監測智慧服務運用</h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
-            <p style="text-indent:2em;">撰寫 Android App、Java 串接 Microsoft Face API 辨識人臉。</p>
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
+            <p style="text-indent: 2em">撰寫 Android App、Java 串接 Microsoft Face API 辨識人臉。</p>
           </div>
           <div class="alert bg-transparent-black text-gray">
             <h3>產學合作案 - 太魯閣國家公園智慧服務平台規劃與運用研究 - II</h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
-            <p style="text-indent:2em;">使用 JavaScript 寫太魯閣旅遊推薦網頁、道路狀況監控網頁。 使用者可以點擊下方的 home icon 來選擇功能，有的是連結到其他網頁作歷史介紹，有的則是會顯示在地圖上，讓使用者可以點擊該位置得到特別的資訊以及交通的方式及時間。</p>
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
+            <p style="text-indent: 2em">
+              使用 JavaScript 寫太魯閣旅遊推薦網頁、道路狀況監控網頁。 使用者可以點擊下方的 home icon
+              來選擇功能，有的是連結到其他網頁作歷史介紹，有的則是會顯示在地圖上，讓使用者可以點擊該位置得到特別的資訊以及交通的方式及時間。
+            </p>
           </div>
           <div class="alert bg-transparent-black text-gray">
             <h3>產學合作案 - 太魯閣國家公園智慧服務平台規劃與運用研究 - III</h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
-            <p style="text-indent:2em;">研究 VR 頭盔、智慧入園網站等智慧服務。</p>
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
+            <p style="text-indent: 2em">研究 VR 頭盔、智慧入園網站等智慧服務。</p>
           </div>
           <div class="alert bg-transparent-black text-gray">
             <h3>HTML5 遊戲開發</h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
-            <p style="text-indent:2em;">使用 TypeScript 及 Phaser 來寫遊戲畫面表現、特效以及前端邏輯處理，並和後端 API 連接。</p>
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
+            <p style="text-indent: 2em">
+              使用 TypeScript 及 Phaser 來寫遊戲畫面表現、特效以及前端邏輯處理，並和後端 API 連接。
+            </p>
           </div>
           <div class="alert bg-transparent-black text-gray">
             <h3>車牌辨識</h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
-            <p style="text-indent:2em;">和 NVR 廠商合作，目標是在全天候的狀況下都能有95%的車牌辨識成功率，並且和 NVR 做結合，即時監測經過 IP Camera 之車輛，並記錄車牌、車型、時間等資料在資料庫，最後透過網頁展示統計結果以及查詢車牌等功能。</p>
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
+            <p style="text-indent: 2em">
+              和 NVR 廠商合作，目標是在全天候的狀況下都能有95%的車牌辨識成功率，並且和 NVR 做結合，即時監測經過 IP
+              Camera 之車輛，並記錄車牌、車型、時間等資料在資料庫，最後透過網頁展示統計結果以及查詢車牌等功能。
+            </p>
           </div>
           <div class="alert bg-transparent-black text-gray">
             <h3>史丹佛銀髮設計競賽</h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
-            <p style="text-indent:2em;">和設計系合作開發 iOS App 參加史丹佛銀髮設計競賽，想要改善現行片面、無感的退休財務資訊傳遞，重新設計整體、有感的退休規劃新體驗。透過遊戲化，將艱澀的專業知識轉譯成容易理解的內容藉由遊戲的互動操作，增加使用者對情境的代入感，進而反思真實人生，以現實世界的研究數據，進行遊戲中的事件設計，達到趨近真實體驗的可能性。</p>
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
+            <p style="text-indent: 2em">
+              和設計系合作開發 iOS App
+              參加史丹佛銀髮設計競賽，想要改善現行片面、無感的退休財務資訊傳遞，重新設計整體、有感的退休規劃新體驗。透過遊戲化，將艱澀的專業知識轉譯成容易理解的內容藉由遊戲的互動操作，增加使用者對情境的代入感，進而反思真實人生，以現實世界的研究數據，進行遊戲中的事件設計，達到趨近真實體驗的可能性。
+            </p>
           </div>
           <div class="alert bg-transparent-black text-gray">
-            <h3>實習 - 平科實業有限公司 - 數位閱讀學習系統開發</h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
-            <p style="text-indent:2em;">在本次實習中，我負責了一個網頁開發的案子，需求是使用 ASP.NET 開發一個讓學生自主學習網頁的前後端，並包含了供管理者對題庫和題目的 CRUD，圖形化顯示題庫和題目的關聯性。在過程中需要和老師開會溝通、和美術協調整體網頁 UI/UX 體驗，並考慮網頁在不同設備上的顯示與使用是否直覺且方便。</p>
+            <h3>平科實業有限公司 - 軟體工程師 (實習) - 數位閱讀學習系統開發</h3>
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
+            <p style="text-indent: 2em">
+              在本次實習中，我負責了一個網頁開發的案子，需求是使用 ASP.NET
+              開發一個讓學生自主學習網頁的前後端，並包含了供管理者對題庫和題目的
+              CRUD，圖形化顯示題庫和題目的關聯性。在過程中需要和老師開會溝通、和美術協調整體網頁 UI/UX
+              體驗，並考慮網頁在不同設備上的顯示與使用是否直覺且方便。
+            </p>
           </div>
           <div class="alert bg-transparent-black text-gray">
-            <h3>宸毅科技股份有限公司</h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
-            <p style="text-indent:2em;">目前任職於宸毅科技股份有限公司</p>
+            <h3>智慧亨通股份有限公司 - 全端工程師</h3>
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
+            <p style="text-indent: 2em">
+              目前任職於智慧亨通股份有限公司，主要使用負責多個前後端專案，主要使用 React (TypeScript) 搭配 Antd
+              開發前端， NestJS (TypeScript) 搭配 TypeORM 在進行開發後端。
+            </p>
           </div>
         </div>
       </div>
 
-      <div id="school-experience" class="row" style="padding-top: 60px;">
+      <div id="school-experience" class="row" style="padding-top: 60px">
         <div class="col">
           <h1>在學經歷</h1>
-          <hr>
+          <hr />
           <div class="alert bg-transparent-black text-gray">
             <h3>程式設計研究社</h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
-            <p style="text-indent:2em;">擔任教學及總務。負責 Python 爬蟲教學、JavaScript 課程助教、JavaScript workshop 助教</p>
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
+            <p style="text-indent: 2em">
+              擔任教學及總務。負責 Python 爬蟲教學、JavaScript 課程助教、JavaScript workshop 助教
+            </p>
           </div>
           <div class="alert bg-transparent-black text-gray">
             <h3>伯爵茶與司康餅社(點心社)</h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
-            <p style="text-indent:2em;">擔任教學長。負責規劃社課、統籌活動、社課教學</p>
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
+            <p style="text-indent: 2em">擔任教學長。負責規劃社課、統籌活動、社課教學</p>
           </div>
           <div class="alert bg-transparent-black text-gray">
             <h3>課程助教</h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
-            <p style="text-indent:2em;">擔任台科資工大一 C/C++ 課程助教</p>
-            <p style="text-indent:2em;">擔任台科資工資料結構課程助教</p>
-            <p style="text-indent:2em;">擔任台科資工全端系統開發課程助教</p>
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
+            <p style="text-indent: 2em">擔任台科資工大一 C/C++ 課程助教</p>
+            <p style="text-indent: 2em">擔任台科資工資料結構課程助教</p>
+            <p style="text-indent: 2em">擔任台科資工全端系統開發課程助教</p>
           </div>
         </div>
       </div>
 
-      <div id="achievement" class="row" style="padding-top: 60px;">
+      <div id="achievement" class="row" style="padding-top: 60px">
         <div class="col">
           <h1>比賽及展覽經驗</h1>
-          <hr>
+          <hr />
           <div class="alert bg-transparent-black text-gray">
             <h3>前行意志當代藝術展</h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
-            <p style="text-indent:2em;">在多媒體課程中與設計系合作設計 Kinect v2 所用的程式獲得第一名，後來參與前行意志當代藝術展，在展覽中展示作品一個月。</p>
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
+            <p style="text-indent: 2em">
+              在多媒體課程中與設計系合作設計 Kinect v2
+              所用的程式獲得第一名，後來參與前行意志當代藝術展，在展覽中展示作品一個月。
+            </p>
           </div>
+          <!-- <div class="alert bg-transparent-black text-gray">
+            <h3>前行意志當代藝術展</h3>
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
+            <div
+              class="fb-post"
+              data-href="https://www.facebook.com/ArtHaolihai/posts/1845216062437349"
+              data-width="350"
+              data-show-text="true"
+              style="text-align: center"
+            >
+              <blockquote
+                cite="https://www.facebook.com/ArtHaolihai/posts/1845216062437349"
+                class="fb-xfbml-parse-ignore"
+                style="text-align: center"
+              >
+                <p>外掛展「栽新星」 第二組 作品名稱：虛實之隙 組員名字：沈政一 / 李瑄/...</p>
+                由<a href="https://www.facebook.com/ArtHaolihai/"
+                  >前行意志當代藝術展 Keep Going - Contemporary Art Exhibition</a
+                >
+                發佈於&nbsp;<a href="https://www.facebook.com/ArtHaolihai/posts/1845216062437349"
+                  >2017年11月14日 星期二</a
+                >
+              </blockquote>
+            </div>
+
+            <div class="alert bg-transparent-gray text-gray" style="margin-top: 10px; margin-bottom: 0px">
+              <p style="text-indent: 2em">
+                在多媒體課程中與設計系合作設計 Kinect v2
+                所用的程式獲得第一名，後來參與前行意志當代藝術展，在展覽中展示作品一個月。
+              </p>
+            </div>
+          </div> -->
+
           <div class="alert bg-transparent-black text-gray">
             <h3>七校聯合遊戲比賽</h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
-            <p style="text-indent:2em;">參加由鈊象電子舉辦的七校聯合遊戲比賽，以自製遊戲 Refuge 入圍決賽。</p>
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
+            <p style="text-indent: 2em">參加由鈊象電子舉辦的七校聯合遊戲比賽，以自製遊戲 Refuge 入圍決賽。</p>
           </div>
           <div class="alert bg-transparent-black text-gray">
             <h3>校內專題競賽</h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
-            <p style="text-indent:2em;">以自適應車牌辨識系統取得本系專題第一的獎項。</p>
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
+            <p style="text-indent: 2em">以自適應車牌辨識系統取得本系專題第一的獎項。</p>
           </div>
           <div class="alert bg-transparent-black text-gray">
             <h3>2019 全國大專院校軟體創作競賽</h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
-            <p style="text-indent:2em;">參加2019全國大專院校軟體創作競賽的智慧感知與互動多媒體組，隊名無辨，以全天候自動化車牌辨識系統獲得銅牌。</p>
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
+            <p style="text-indent: 2em">
+              參加2019全國大專院校軟體創作競賽的智慧感知與互動多媒體組，隊名無辨，以全天候自動化車牌辨識系統獲得銅牌。
+            </p>
           </div>
         </div>
       </div>
 
-      <div id="portfolio" class="row" style="padding-top: 60px;">
+      <div id="portfolio" class="row" style="padding-top: 60px">
         <div class="col">
           <h1>作品集</h1>
-          <hr>
+          <hr />
           <div class="alert bg-transparent-black text-gray">
             <h3>Gravity</h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/koCh1QU4ZAQ?rel=0" allowfullscreen></iframe>
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/koCh1QU4ZAQ?rel=0"
+                allowfullscreen
+              ></iframe>
             </div>
-            <div class="alert bg-transparent-gray text-gray" style="margin-top:10px; margin-bottom:0px;">
-              <p style="text-indent:2em;">Gravity 是我寫的一款 iOS App 遊戲，操作簡單， 但難度高，具有挑戰性。點擊畫面左右可以往左右跳，避開往上的石塊以及四 周的邊界，當畫面出現顛倒的警告時，畫面會閃爍四次接著遊戲重力顛倒，死掉時紀錄最高分數，不斷挑戰自己的最高分。</p>
+            <div class="alert bg-transparent-gray text-gray" style="margin-top: 10px; margin-bottom: 0px">
+              <p style="text-indent: 2em">
+                Gravity 是我寫的一款 iOS App 遊戲，操作簡單，
+                但難度高，具有挑戰性。點擊畫面左右可以往左右跳，避開往上的石塊以及四
+                周的邊界，當畫面出現顛倒的警告時，畫面會閃爍四次接著遊戲重力顛倒，死掉時紀錄最高分數，不斷挑戰自己的最高分。
+              </p>
             </div>
           </div>
 
           <div class="alert bg-transparent-black text-gray">
             <h3>EasyMRT</h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UgTeyr1mbkw?rel=0" allowfullscreen></iframe>
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/UgTeyr1mbkw?rel=0"
+                allowfullscreen
+              ></iframe>
             </div>
-            <div class="alert bg-transparent-gray text-gray" style="margin-top:10px; margin-bottom:0px;">
-              <p style="text-indent:2em;">easyMRT 是我寫的一款 iOS App，在 Search 頁面可以滾動選擇起點終點站，停止滾動時會顯示各種價 格及估計時間，點擊轉乘方式可以知道詳細的轉乘路線，在 Map 頁面可以點擊圖上的站選擇起點，點擊原本的站取消，點擊別的站為終點，按確認後移回 Search 頁面顯示詳細資訊。</p>
+            <div class="alert bg-transparent-gray text-gray" style="margin-top: 10px; margin-bottom: 0px">
+              <p style="text-indent: 2em">
+                easyMRT 是我寫的一款 iOS App，在 Search 頁面可以滾動選擇起點終點站，停止滾動時會顯示各種價
+                格及估計時間，點擊轉乘方式可以知道詳細的轉乘路線，在 Map
+                頁面可以點擊圖上的站選擇起點，點擊原本的站取消，點擊別的站為終點，按確認後移回 Search 頁面顯示詳細資訊。
+              </p>
             </div>
           </div>
 
           <div class="alert bg-transparent-black text-gray">
             <h3>Refuge</h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Q_B353Ijfgg?rel=0" allowfullscreen></iframe>
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/Q_B353Ijfgg?rel=0"
+                allowfullscreen
+              ></iframe>
             </div>
-            <div class="alert bg-transparent-gray text-gray" style="margin-top:10px; margin-bottom:0px;">
-              <p style="text-indent:2em;">Refuge這款遊戲結合了生存、建設、規劃、探索等等元素，玩家需要妥善分配資源及人力才 能夠在這個世界生存下來，並享受一個城市在自己的經營下慢慢成長茁壯的成就感。 玩家在發展時也要注意花費資源在保護自己上，否則遭遇攻擊時會有更大的損失。而在遊玩 途中，玩家會發現一個個小故事，慢慢的能夠由小細節拼湊出這個世界發生災難的主因。</p>
-              <p style="text-indent:2em;">但這款遊戲對當時的我負擔太重，在兼顧其他事務的狀況下開發，因此遊戲的完成度不高，在參加多校聯合舉辦的遊戲比賽中入圍決賽，可惜未能拿到獎項。</p>
+            <div class="alert bg-transparent-gray text-gray" style="margin-top: 10px; margin-bottom: 0px">
+              <p style="text-indent: 2em">
+                Refuge這款遊戲結合了生存、建設、規劃、探索等等元素，玩家需要妥善分配資源及人力才
+                能夠在這個世界生存下來，並享受一個城市在自己的經營下慢慢成長茁壯的成就感。
+                玩家在發展時也要注意花費資源在保護自己上，否則遭遇攻擊時會有更大的損失。而在遊玩
+                途中，玩家會發現一個個小故事，慢慢的能夠由小細節拼湊出這個世界發生災難的主因。
+              </p>
+              <p style="text-indent: 2em">
+                但這款遊戲對當時的我負擔太重，在兼顧其他事務的狀況下開發，因此遊戲的完成度不高，在參加多校聯合舉辦的遊戲比賽中入圍決賽，可惜未能拿到獎項。
+              </p>
             </div>
           </div>
 
           <div class="alert bg-transparent-black text-gray">
-            <h3>論文 - 基於深度學習之全天候車輛違規辨識 - <a href="http://dataset.gamelab.com.tw/tvaaw/">Demo</a></h3>
-            <hr style="margin-top:5px; margin-bottom:5px;">
-            <img src="./image/alpr.jpg" class="img-fluid img-thumbnail">
-            <div class="alert bg-transparent-gray text-gray" style="margin-top:10px; margin-bottom:0px;">
-              <p style="text-indent:2em;">自動化車牌辨識在現代交通系統上有著越來越重要的地位，可以對車輛違規的行為進行24小時的監控、對違法車輛進行追蹤，或是裝設在停車場，節省人力以及管理成本。不過目前裝設在台灣的車牌辨識系統，大多都需要針對該場所調整系統的設定，或是加裝照明設備，讓整體環境符合系統需求才有辦法進行有效的辨識，而近幾年也有許多基於機器學習的車牌辨識系統，但大多都沒有考慮到產品需要的辨識速度及產品本身有限的成本，且沒有經過一個龐大且多樣化環境的數據集檢測。因此，在本文中，我們提出了一種有效、快速且能適應各種環境的車牌辨識系統。在使用 CPU i9-9900K 和 GPU RTX 2080 的硬體狀況下我們的系統能達到 64 FPS 的辨識速度，並對多個影像同時辨識進行了系統優化，同時辨識四個影像時也能達到 47 FPS 的辨識速度。</p>
-              <p style="text-indent:2em;">除了車牌辨識以外，本文還包含車輛、車牌及車牌號碼顏色辨識、車型辨識等功能，並對於臺灣交通法規定義之違法行為提出辨識方法，例如 : 區間測速計算方式、違規跨線偵測、車輛未保持安全距離偵測、摩托車未戴安全帽辨識等等。我們使用了 AOLP Dataset 對我們車牌辨識系統進行評估，我們達到了平均 99.29% 的辨識率，在測試只需使用部分 Module 的狀況下 (此 Dataset 測試方式只需從 Dataset 已有標記的車牌影像進行辨識，無須對車牌位置進行偵測)，辨識速度更達到了 188 FPS。</p>
+            <h3>論文 - 基於深度學習之全天候車輛違規辨識 - <a href="http://heimdall.gamelab.com.tw/">Demo</a></h3>
+            <hr style="margin-top: 5px; margin-bottom: 5px" />
+            <img src="./image/alpr.jpg" class="img-fluid img-thumbnail" />
+            <div class="alert bg-transparent-gray text-gray" style="margin-top: 10px; margin-bottom: 0px">
+              <p style="text-indent: 2em">
+                自動化車牌辨識在現代交通系統上有著越來越重要的地位，可以對車輛違規的行為進行24小時的監控、對違法車輛進行追蹤，或是裝設在停車場，節省人力以及管理成本。不過目前裝設在台灣的車牌辨識系統，大多都需要針對該場所調整系統的設定，或是加裝照明設備，讓整體環境符合系統需求才有辦法進行有效的辨識，而近幾年也有許多基於機器學習的車牌辨識系統，但大多都沒有考慮到產品需要的辨識速度及產品本身有限的成本，且沒有經過一個龐大且多樣化環境的數據集檢測。因此，在本文中，我們提出了一種有效、快速且能適應各種環境的車牌辨識系統。在使用
+                CPU i9-9900K 和 GPU RTX 2080 的硬體狀況下我們的系統能達到 64 FPS
+                的辨識速度，並對多個影像同時辨識進行了系統優化，同時辨識四個影像時也能達到 47 FPS 的辨識速度。
+              </p>
+              <p style="text-indent: 2em">
+                除了車牌辨識以外，本文還包含車輛、車牌及車牌號碼顏色辨識、車型辨識等功能，並對於臺灣交通法規定義之違法行為提出辨識方法，例如
+                : 區間測速計算方式、違規跨線偵測、車輛未保持安全距離偵測、摩托車未戴安全帽辨識等等。我們使用了 AOLP
+                Dataset 對我們車牌辨識系統進行評估，我們達到了平均 99.29% 的辨識率，在測試只需使用部分 Module 的狀況下
+                (此 Dataset 測試方式只需從 Dataset 已有標記的車牌影像進行辨識，無須對車牌位置進行偵測)，辨識速度更達到了
+                188 FPS。
+              </p>
             </div>
           </div>
         </div>
