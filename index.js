@@ -18,40 +18,35 @@ function snowing() {
     const widthRatio = window.devicePixelRatio || 1;
     const left = random((max = screen.width * widthRatio), (float = false));
     const heightShift = random(-25, 25, (float = false));
-    const fallAnimationTime = random(20, 30, (float = false));
+    const fallAnimationTime = random(30, 45, (float = false));
 
     let box = document.createElement("div");
     document.body.appendChild(box);
     box.className = "snow-box";
-    box.style =
-      "left: " +
-      left +
-      "px; margin-top: " +
-      heightShift +
-      "px; animation: fall " +
-      fallAnimationTime +
-      "s linear infinite;";
+    const boxStyleString =
+      `left: ${left}px; margin-top: ${heightShift}px; ` +
+      `animation: fall ${fallAnimationTime}s linear infinite;`;
+    box.style = boxStyleString;
 
-    const size = random(2, 7, (float = false));
+    const snowTransparent = random(0.2, 0.8);
+    const size = random(
+      2 / snowTransparent,
+      7 / snowTransparent,
+      (float = false)
+    );
     const floatAnimation = random(1, 12, (float = false));
     const floatAnimationTime = random(10, 20, (float = false));
-    const snowTransparent = random(0.3, 0.8);
+    console.log(size);
 
     let snow = document.createElement("div");
     box.appendChild(snow);
     snow.className = "snow";
-    snow.style =
-      "height: " +
-      size +
-      "px; width: " +
-      size +
-      "px; background-color: rgba(255, 255, 255, " +
-      snowTransparent +
-      "); animation: float-" +
-      floatAnimation +
-      " " +
-      floatAnimationTime +
-      "s ease-in-out infinite alternate-reverse;";
+    const snowStyleString =
+      `height: ${size}px; width: ${size}px; ` +
+      `background: radial-gradient(circle at center, rgba(255,255,255, ${snowTransparent}), rgba(255, 255, 255, 0)); ` +
+      `animation: float-${floatAnimation} ${floatAnimationTime}s ease-in-out infinite alternate-reverse;`;
+
+    snow.style = snowStyleString;
   }
   const delay = random((min = 1000), (max = 2000), (float = false));
   totalTime += delay;

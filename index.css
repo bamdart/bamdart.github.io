@@ -11,7 +11,8 @@ body:after {
   right: 0;
   height: 100vh;
   z-index: -10;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("./image/bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+    url("./image/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
@@ -153,6 +154,7 @@ hr {
 
 .snow-box {
   position: fixed;
+  top: 0px;
 }
 
 .snow {
@@ -162,109 +164,109 @@ hr {
 
 @keyframes fall {
   from {
-    top: 0%;
+    transform: translateY(0vh);
   }
   to {
-    top: 100%;
+    transform: translateY(150vh);
   }
 }
 
 @keyframes float-1 {
   from {
-    margin-left: -20px;
+    transform: translateX(-20px);
   }
   to {
-    margin-left: 20px;
+    transform: translateX(20px);
   }
 }
 @keyframes float-2 {
   from {
-    margin-left: 20px;
+    transform: translateX(20px);
   }
   to {
-    margin-left: -20px;
+    transform: translateX(-20px);
   }
 }
 @keyframes float-3 {
   from {
-    margin-left: -30px;
+    transform: translateX(-30px);
   }
   to {
-    margin-left: 30px;
+    transform: translateX(30px);
   }
 }
 @keyframes float-4 {
   from {
-    margin-left: 30px;
+    transform: translateX(30px);
   }
   to {
-    margin-left: -30px;
+    transform: translateX(-30px);
   }
 }
 @keyframes float-5 {
   from {
-    margin-left: -40px;
+    transform: translateX(-40px);
   }
   to {
-    margin-left: 40px;
+    transform: translateX(40px);
   }
 }
 @keyframes float-6 {
   from {
-    margin-left: 40px;
+    transform: translateX(40px);
   }
   to {
-    margin-left: -40px;
+    transform: translateX(-40px);
   }
 }
 
 @keyframes float-7 {
   from {
-    margin-left: -50px;
+    transform: translateX(-50px);
   }
   to {
-    margin-left: 50px;
+    transform: translateX(50px);
   }
 }
 @keyframes float-8 {
   from {
-    margin-left: 50px;
+    transform: translateX(50px);
   }
   to {
-    margin-left: -50px;
+    transform: translateX(-50px);
   }
 }
 
 @keyframes float-9 {
   from {
-    margin-left: -60px;
+    transform: translateX(-60px);
   }
   to {
-    margin-left: 60px;
+    transform: translateX(60px);
   }
 }
 @keyframes float-10 {
   from {
-    margin-left: 60px;
+    transform: translateX(60px);
   }
   to {
-    margin-left: -60px;
+    transform: translateX(-60px);
   }
 }
 
 @keyframes float-11 {
   from {
-    margin-left: -70px;
+    transform: translateX(-70px);
   }
   to {
-    margin-left: 70px;
+    transform: translateX(70px);
   }
 }
 @keyframes float-12 {
   from {
-    margin-left: 70px;
+    transform: translateX(70px);
   }
   to {
-    margin-left: -70px;
+    transform: translateX(-70px);
   }
 }
