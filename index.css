@@ -27,56 +27,6 @@ body {
   font-family: Microsoft JhengHei;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("./image/bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
-
-  /* background: linear-gradient(165deg, #111111, #222222);
-  background-size: 400% 400%;
-  background-attachment: fixed;
-
-  -webkit-animation: BackgroundAnimation 15s ease infinite;
-  -moz-animation: BackgroundAnimation 15s ease infinite;
-  animation: BackgroundAnimation 15s ease infinite; */
-}
-
-@-webkit-keyframes BackgroundAnimation {
-  0% {
-    background-position: 15% 0%;
-  }
-  50% {
-    background-position: 85% 100%;
-  }
-  100% {
-    background-position: 15% 0%;
-  }
-}
-@-moz-keyframes BackgroundAnimation {
-  0% {
-    background-position: 15% 0%;
-  }
-  50% {
-    background-position: 85% 100%;
-  }
-  100% {
-    background-position: 15% 0%;
-  }
-}
-@keyframes BackgroundAnimation {
-  0% {
-    background-position: 15% 0%;
-  }
-  50% {
-    background-position: 85% 100%;
-  }
-  100% {
-    background-position: 15% 0%;
-  }
 }
 
 p {
@@ -86,8 +36,42 @@ p {
   text-justify: inter-ideograph;
 }
 
+p.small {
+  color: #999999;
+  font-size: 16px;
+}
+
+a.link-icon {
+  color: #eeeeee;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+a.link-icon:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 h1 {
   font-weight: bold;
+  font-size: 32px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+ul li {
+  font-size: 18px;
 }
 
 hr {
@@ -132,6 +116,7 @@ hr {
   transform: translate(-3px, -3px);
 }
 
+/* 滾動條 */
 ::-webkit-scrollbar {
   height: 6px;
   width: 6px;
@@ -152,6 +137,7 @@ hr {
   background: #303030;
 }
 
+/* 雪景 */
 .snow-box {
   position: fixed;
   top: 0px;
@@ -268,5 +254,41 @@ hr {
   }
   to {
     transform: translateX(-70px);
+  }
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  ul li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  p {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  ul li {
+    font-size: 14px;
   }
 }
